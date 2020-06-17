@@ -2,21 +2,20 @@ import React from 'react';
 import './style.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import amiiboTest from '../../assets/img/amiibo-test.jpg';
 
-function BaseCard() {
+function BaseCard(props) {
+
+  let cardData = props.data;
+
   return(
     <Card className="baseCard">
-      <Card.Img variant="top" src={amiiboTest} />
+      <Card.Img className="cardImg" variant="top" src={cardData.image} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of
-          the card's content.
-        </Card.Text>
+        <Card.Title>{cardData.name}</Card.Title>
+        <Card.Text>{cardData.amiiboSeries}</Card.Text>
       </Card.Body>
       <Card.Footer>
-        <Button variant="primary" block>Go somewhere</Button>
+        <Button variant="primary" block>Agregar al carrito</Button>
       </Card.Footer>
     </Card>
   );

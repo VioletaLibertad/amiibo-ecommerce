@@ -1,3 +1,9 @@
 .baseCard {
-  width: 15rem;
+  max-height: 30rem;
+}
+
+.cardImg {
+  margin: 0.5rem 0 0.5rem 0;
+  object-fit: contain;
+  max-height: 15rem;
 }

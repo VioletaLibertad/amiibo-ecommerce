@@ -1,0 +1,18 @@
+{
+  "amiibo": {
+      "amiiboSeries": "Super Smash Bros.",
+      "character": "Yoshi",
+      "gameSeries": "Super Mario",
+      "head": "00030000",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00020002.png",
+      "name": "Yoshi",
+      "release": {
+          "au": "2014-11-29",
+          "eu": "2014-11-28",
+          "jp": "2014-12-06",
+          "na": "2014-11-21"
+      },
+      "tail": "00020002",
+      "type": "Figure"
+  }
+}
