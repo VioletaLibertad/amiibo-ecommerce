@@ -13,6 +13,7 @@ function BaseCard(props) {
       <Card.Body>
         <Card.Title>{cardData.name}</Card.Title>
         <Card.Text>{cardData.amiiboSeries}</Card.Text>
+        <Card.Text>{cardData.type}</Card.Text>
       </Card.Body>
       <Card.Footer>
         <Button variant="primary" block>Agregar al carrito</Button>
