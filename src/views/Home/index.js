@@ -9,12 +9,15 @@ function Home() {
   const [amiiboList, setAmiiboList] = useState([]);
 
   useEffect(() => {
-    const getList = async () => {
-      const data = await getAmiiboList();
-      setAmiiboList(data);
-    };
     getList();
   });
+
+  const getList = async () => {
+    if (amiiboList.length === 0) {
+      const data = await getAmiiboList();
+      setAmiiboList(data);
+    }
+  };
 
 
   return (
