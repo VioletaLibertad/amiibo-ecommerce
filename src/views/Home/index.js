@@ -1,9 +1,16 @@
 import React from 'react';
+import Navbar from '../../components/Navbar/index';
+import BaseCard from '../../components/BaseCard';
+import Container from 'react-bootstrap/Container';
 
 function Home() {
   return (
     <div>
-      <h1>HOLOOOOOO desde Home</h1>
+      <Navbar showCart={true} />
+      <Container>  
+        <h2>Bienvenid@ a la mejor tienda de Amiibos</h2>
+        <BaseCard />
+      </Container>
     </div>
   );
 }
