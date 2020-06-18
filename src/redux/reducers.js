@@ -1,4 +1,4 @@
-import { RECEIVE_AMIIBO_LIST, ADD_TO_CART, REMOVE_FROM_CART, GET_CART } from './actions';
+import { RECEIVE_AMIIBO_LIST, ADD_TO_CART, REMOVE_FROM_CART, GET_CART, CLEAN_CART } from './actions';
 
 const initialState = {
   amiiboList: [],
@@ -26,6 +26,11 @@ const rootReducer = (state = initialState, { type, data }) => {
       return {
         ...state,
         cart: state.cart
+      };
+    case CLEAN_CART:
+      return {
+        ...state,
+        cart: []
       };
     default:
       return state;

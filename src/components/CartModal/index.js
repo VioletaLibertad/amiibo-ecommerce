@@ -26,39 +26,46 @@ function CartModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Table borderless responsive>
-          <thead>
-            <tr>
-              <th>Personaje</th>
-              <th>Amiibo Serie</th>
-              <th>Tipo</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {cart.map(elem =>
-              <tr key={elem.tail}>
-                <td>{elem.character}</td>
-                <td>{elem.amiiboSeries}</td>
-                <td>{elem.type}</td>
-                <td>
-                <Button size="sm" variant="danger" 
-                onClick={() => dispatch(removeFromCart(elem))} block>
-                  Remover
-                </Button>
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </Table>
-
+        {cart.length > 0
+          ? <Table borderless responsive>
+              <thead>
+                <tr>
+                  <th>Personaje</th>
+                  <th>Amiibo Serie</th>
+                  <th>Tipo</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {cart.map(elem =>
+                  <tr key={elem.tail}>
+                    <td>{elem.character}</td>
+                    <td>{elem.amiiboSeries}</td>
+                    <td>{elem.type}</td>
+                    <td>
+                      <Button size="sm" variant="danger" 
+                      onClick={() => dispatch(removeFromCart(elem))} block>
+                        Remover
+                      </Button>
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </Table>
+          : <h3>Tu carrito está vacío, ve a buscar algunos amiibos :D</h3>
+        }
       </Modal.Body>
       <Modal.Footer>
-        <Link to={checkout} onClick={props.onHide}>
-          <Button>
-          ¡Quiero mis amiibo!
+        {cart.length > 0 
+          ? <Link to={checkout} onClick={props.onHide}>
+              <Button>
+              ¡Quiero mis amiibo!
+              </Button>
+            </Link>
+          : <Button onClick={props.onHide}>
+            Seleccionar amiibos
           </Button>
-        </Link>
+        }
       </Modal.Footer>
     </Modal>
   );

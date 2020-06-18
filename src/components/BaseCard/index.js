@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import './style.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import { addToCart, removeFromCart, getCart } from '../../redux/actions';
+import { addToCart, removeFromCart } from '../../redux/actions';
 
 function BaseCard(props) {
   const [productAdded, setProductAdded] = useState(false);
@@ -19,7 +19,7 @@ function BaseCard(props) {
     } else {
       setProductAdded(false);
     }
-  });
+  }, [itemInCart]);
 
   return(
     <Card className="baseCard">
