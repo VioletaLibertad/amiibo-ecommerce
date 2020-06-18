@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1024a24120c4939e8fe5f7fc1b9263d5",
+    "revision": "0595ae02858fa17d10daa2c342e8dc99",
     "url": "/amiibo-ecommerce/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/amiibo-ecommerce/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "0c59d9df29d079de3703",
+    "revision": "24791fba9a11b5f4934a",
     "url": "/amiibo-ecommerce/static/css/main.89ad5625.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/amiibo-ecommerce/static/js/2.7ad9e978.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c59d9df29d079de3703",
-    "url": "/amiibo-ecommerce/static/js/main.57640929.chunk.js"
+    "revision": "24791fba9a11b5f4934a",
+    "url": "/amiibo-ecommerce/static/js/main.b0d06a82.chunk.js"
   },
   {
     "revision": "9797591220809557f713",
