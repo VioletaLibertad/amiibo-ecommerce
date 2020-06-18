@@ -1,24 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Navbar from '../../components/Navbar/index';
 import BaseCard from '../../components/BaseCard';
 import Container from 'react-bootstrap/Container';
 import CardColumns from 'react-bootstrap/CardColumns';
-import { getAmiiboList } from '../../redux/api/index';
+import { REQUEST_AMIIBO_LIST } from '../../redux/actions';
 
 function Home() {
-  const [amiiboList, setAmiiboList] = useState([]);
+  const dispatch = useDispatch();
+
+  const amiiboList = useSelector(state => state.amiiboList);
 
   useEffect(() => {
-    getList();
-  });
-
-  const getList = async () => {
     if (amiiboList.length === 0) {
-      const data = await getAmiiboList();
-      setAmiiboList(data);
+      dispatch({ type: REQUEST_AMIIBO_LIST });
     }
-  };
-
+  });
 
   return (
     <div>
