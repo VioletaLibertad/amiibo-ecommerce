@@ -28,6 +28,7 @@ function BaseCard(props) {
         <Card.Title>{cardData.name}</Card.Title>
         <Card.Text>{cardData.amiiboSeries}</Card.Text>
         <Card.Text>{cardData.type}</Card.Text>
+        <Card.Title>$ {cardData.price}</Card.Title>
       </Card.Body>
       <Card.Footer>
         {!productAdded

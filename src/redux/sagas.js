@@ -5,6 +5,9 @@ import { fetchAmiiboList } from './api';
 function* getAmiiboList() {
   try {
     const data = yield call(fetchAmiiboList);
+    data.forEach((element) => {
+      element.price = Math.round(Math.random()*10000);
+    });
     yield put(receiveAmiiboList(data));
   } catch (error) {
     console.log(error);

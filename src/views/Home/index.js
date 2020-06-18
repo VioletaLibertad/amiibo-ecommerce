@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Navbar from '../../components/Navbar/index';
 import BaseCard from '../../components/BaseCard';
 import Container from 'react-bootstrap/Container';
+import Spinner from 'react-bootstrap/Spinner';
 import CardColumns from 'react-bootstrap/CardColumns';
 import { REQUEST_AMIIBO_LIST } from '../../redux/actions';
 
@@ -25,7 +26,7 @@ function Home() {
         <CardColumns>
           {amiiboList ? 
             amiiboList.map(elem => <BaseCard key={elem.tail} data={elem} />)
-            : null
+            : <Spinner animation="grow" />
           }
         </CardColumns>
       </Container>

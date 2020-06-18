@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Navbar from '../../components/Navbar/index';
 import Container from 'react-bootstrap/Container';
@@ -11,9 +11,17 @@ import { home } from '../../routes';
 import { CLEAN_CART } from '../../redux/actions';
 
 function Checkout() {
+  const [total, setTotal] = useState(0);
   const dispatch = useDispatch();
 
   const cart = useSelector(state => state.cart);
+
+  useEffect(() => {
+    if (cart.length > 0) {
+      let totalValue = cart.reduce((sum, elem) => sum + elem.price, 0);
+      setTotal(totalValue);
+    }
+  }, [cart]);
 
   return (
     <div>
@@ -48,7 +56,9 @@ function Checkout() {
               </Button>
             </Link>
           </Col>
-          <Col></Col>
+          <Col>
+            <h3>Total: ${total}</h3>
+          </Col>
           <Col>
             <Link to={home}>
               <Button onClick={() => dispatch({ type: CLEAN_CART })}>
