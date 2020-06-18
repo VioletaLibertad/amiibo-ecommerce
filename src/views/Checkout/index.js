@@ -35,6 +35,7 @@ function Checkout() {
               <th>Nombre</th>
               <th>Amiibo Serie</th>
               <th>Tipo</th>
+              <th>Valor</th>
             </tr>
           </thead>
           <tbody>
@@ -44,6 +45,7 @@ function Checkout() {
                 <td>{elem.name}</td>
                 <td>{elem.amiiboSeries}</td>
                 <td>{elem.type}</td>
+                <td>${elem.price}</td>
               </tr>
             )}
           </tbody>

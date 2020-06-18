@@ -24,6 +24,8 @@ yarn start
 
 The App will be running on port 3000 (http://localhost:3000/)
 
+Additionally, you can check on the deployed version [here](https://violetalibertad.github.io/amiibo-ecommerce/)
+
 ---
 
 © VioletaLibertad, 2020

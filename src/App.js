@@ -9,7 +9,7 @@ import * as routes from './routes';
 function App() {
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename={window.location.pathname || ''}>
         <Route exact path={routes.home} component={Home} />
         <Route path={routes.checkout} component={Checkout} />
       </Router>
