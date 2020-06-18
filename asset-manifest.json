@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/amiibo-ecommerce/static/css/main.89ad5625.chunk.css",
-    "main.js": "/amiibo-ecommerce/static/js/main.1bbf58a4.chunk.js",
-    "main.js.map": "/amiibo-ecommerce/static/js/main.1bbf58a4.chunk.js.map",
+    "main.js": "/amiibo-ecommerce/static/js/main.57640929.chunk.js",
+    "main.js.map": "/amiibo-ecommerce/static/js/main.57640929.chunk.js.map",
     "runtime-main.js": "/amiibo-ecommerce/static/js/runtime-main.2a9ac712.js",
     "runtime-main.js.map": "/amiibo-ecommerce/static/js/runtime-main.2a9ac712.js.map",
     "static/css/2.af3c1da9.chunk.css": "/amiibo-ecommerce/static/css/2.af3c1da9.chunk.css",
     "static/js/2.7ad9e978.chunk.js": "/amiibo-ecommerce/static/js/2.7ad9e978.chunk.js",
     "static/js/2.7ad9e978.chunk.js.map": "/amiibo-ecommerce/static/js/2.7ad9e978.chunk.js.map",
     "index.html": "/amiibo-ecommerce/index.html",
-    "precache-manifest.ff3ed6cd3177e9b211b86701fd4302b6.js": "/amiibo-ecommerce/precache-manifest.ff3ed6cd3177e9b211b86701fd4302b6.js",
+    "precache-manifest.27bb43ebece4d2efcd2dbd738165eb31.js": "/amiibo-ecommerce/precache-manifest.27bb43ebece4d2efcd2dbd738165eb31.js",
     "service-worker.js": "/amiibo-ecommerce/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/amiibo-ecommerce/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.89ad5625.chunk.css.map": "/amiibo-ecommerce/static/css/main.89ad5625.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.7ad9e978.chunk.js",
     "static/css/main.89ad5625.chunk.css",
-    "static/js/main.1bbf58a4.chunk.js"
+    "static/js/main.57640929.chunk.js"
   ]
 }

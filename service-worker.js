@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/amiibo-ecommerce/precache-manifest.ff3ed6cd3177e9b211b86701fd4302b6.js"
+  "/amiibo-ecommerce/precache-manifest.27bb43ebece4d2efcd2dbd738165eb31.js"
 );
 
 self.addEventListener('message', (event) => {
