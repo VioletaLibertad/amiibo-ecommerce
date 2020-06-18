@@ -6,4 +6,22 @@ It was really fun working on this because, although I have used Redux before, I 
 
 My design abilities are certaintly not the best, but I tried to make sure that the code was as beautifully written as I could. 
 
+## How to use it
+
+You have to first clone this proyect, and then run:
+
+```
+yarn install
+```
+
+and later...
+
+```
+yarn start
+```
+
+The App will be running on port 3000 (http://localhost:3000/)
+
+---
+
 © VioletaLibertad, 2020
